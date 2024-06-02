@@ -1,0 +1,325 @@
+﻿*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+    background-color: #EEF1F1;
+}
+
+table 
+{ 
+    empty-cells: show; 
+}
+
+hr
+{
+     text-align: left;
+     background: transparent url(/Images/underline_tile.png) repeat-x;
+     border: none;
+}
+
+h2
+{
+    font: Arial;
+    font-size: 13pt;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    color: #166A8C
+}
+
+h5
+{
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    color: #166A8C
+}
+
+.header
+{
+    height: 119px;
+    border-bottom: solid 1px #CCCCCC;
+    background: transparent url(/Images/HeaderTile.png) repeat-x;
+}
+
+.footer
+{
+    background: transparent url(/Images/FooterTile.png) repeat-x;
+    width: 100%;
+    height: 16px;
+}
+
+#loginDisplay
+{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    color: #FFFFFF;
+}
+#loginDisplay a
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#dvMenu
+{
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    height: 25px;
+}
+
+.menuHover
+{
+    background: transparent url(/Images/Menu/Nav_background.png) repeat-x;
+}
+
+.mainContent
+{
+    background: #EEF1F1 url(/Images/backgroundtile.png) repeat-x;
+    margin-bottom: 50px;
+}
+
+.login
+{
+    margin: 50px auto;
+    width: 300px;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+.login input[type=submit]
+{
+    margin-top: 20px;
+}
+
+.roundCorners
+{
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px;
+}
+
+.buttonWrapper
+{
+    padding-left: 5px;
+    width: 5px;
+    height: 27px;
+    background: transparent url(/Images/Button_primary_left.png) no-repeat scroll;
+}
+.button
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    height: 27px;
+    padding-right: 5px;
+    cursor: pointer;
+    background: transparent url(/Images/Button_primary_right.png) no-repeat scroll top right;
+}
+input[type=submit]:hover
+{
+    background-color: #DDDDDD;
+}
+
+.detailsForm
+{
+    padding: 5px;
+}
+
+.detailsForm label
+{
+    color: #464646;
+}
+
+.detailsForm td
+{
+    padding: 2px;
+}
+
+.detailsForm table
+{
+    margin-left: 10px;
+    padding: 0px; 
+    margin: 0px;
+}
+
+.detailsForm input[type=text]
+{
+    color: #797979;
+    font-family: Tahoma; 
+    font-size: 9pt;
+    padding-left: 3px;
+    width: 160px;
+    height: 21px;
+    border: none;
+    background: transparent url(/Images/textinput_single.png) no-repeat;
+}
+.detailsForm select
+{
+    color: #797979;
+    font-family: Tahoma; 
+    font-size: 9pt;
+    height: 20px;
+    padding: 2px;
+    border: none;
+    background: url(/Images/dropdown.png) no-repeat;
+    width: 180px;
+}
+.detailsForm textarea
+{
+    width: 698px;
+    max-width: 698px;
+    height: 41px;
+    max-height: 41px;
+    background: transparent url(/Images/textinput_multi.png) no-repeat;
+    border: none;
+    padding: 2px;
+    resize:none;
+}
+
+.gridForm
+{
+    margin: 5px;
+}
+
+.grid
+{
+    margin: 0px;
+}
+
+.toolbar
+{
+    width: 100%;
+    height: 18px;
+    border: solid 1px #99acb5;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+.toolbarCell
+{
+    width: 20px;
+    text-align: center;
+}
+
+.toolbarButton
+{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+
+.toolbarImageButton
+{
+    min-width: 40px;
+    height: 16px;
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+    border: none;
+    border-right: solid 1px #CCCCCC;
+    background-color: transparent;
+    margin: 1px 1px 1px 1px;
+    text-indent: 16px;
+    font-family: Tahoma;
+    font-size: 8pt;
+    padding-right: 3px;
+    color: #464646;
+}
+.toolbarImageButton:hover
+{
+    background-color: #D2D2D2;
+}
+
+.popup
+{
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+
+#dvSearch
+{
+    font-family: Tahoma; 
+    font-size: 9pt;
+    color: #666666;
+}
+
+.ui-dialog-content input, .ui-dialog-content select
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+.ui-dialog-content td
+{
+    padding: 2px;
+}
+
+.checkbox input[type=checkbox]
+{
+    margin: 3px 3px 0px 0px;
+}
+
+.dvHeaderBlock
+{
+    display:block;
+    width:100%;
+    padding: 5px 5px 5px 5px;
+}
+
+.dvHeaderBlock h2
+{
+    display:block;
+    float:left;
+    width:auto;
+}
+
+.dvHeaderBlock span
+{
+    display:block;
+    text-align:right;
+    padding-right:15px;   
+}
+
+.dvHeaderBlock a
+{
+    text-decoration:underline;
+    color:#000000;
+    background-color:#e3eaeb;
+    padding:5px 20px 5px 20px;     
+}
+.standardContainer
+{
+    border: 1px solid #cccccc;
+    padding:5px;
+}
+
+.tblApplicationDetails
+{
+    border: 0px solid #ffffff; 
+    width: 100%; 
+    height: auto;
+}
+
+.tblApplicationDetails td
+{
+    width: 200px;
+}
+
+.tblApplicationDetails a
+{
+    color:#666666;
+    text-decoration:underline;
+}
+
