@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '6.0.x' # Adjust the .NET version if necessary
 
       - name: Restore NuGet packages
-        run: dotnet restore packages.config # Use the project file here
+      run: nuget restore ./packages.config -PackagesDirectory ./packages
 
-      - name: Publish to folder
-        run: dotnet publish packages.config -c Release -o published # Use the project file here
+    - name: Build with MSBuild
+      run: msbuild /p:Configuration=Release /p:PackagesDirectory=./packages
 
       - name: Copy Web.config
         run: |
