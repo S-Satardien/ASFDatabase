@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '6.0.x' # Adjust the .NET version if necessary
 
       - name: Restore NuGet packages
-        run: dotnet restore ASFDatabase-main/Web.config # Use the project file here
+        run: dotnet restore packages.config # Use the project file here
 
       - name: Publish to folder
-        run: dotnet publish ASFDatabase-main/Web.config -c Release -o published # Use the project file here
+        run: dotnet publish packages.config -c Release -o published # Use the project file here
 
       - name: Copy Web.config
         run: |
