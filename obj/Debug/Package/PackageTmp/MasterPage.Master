@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="ASF.Web.SiteMaster" %>
+
+<%@ Register src="UserControls/MenuControl.ascx" tagname="MenuControl" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>African Scholars Fund</title>
+    
+    <link rel="StyleSheet" href="/CSS/Main.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/Menu.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/Grid.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/jQueryUI/jquery-ui-1.8.9.custom.css" type="text/css" />
+
+    <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.dropdownPlain.js"></script>
+    <script type="text/javascript" src="/Scripts/ASF.js"></script>
+
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <img src="/Images/Header_option2.png" alt="" />
+            
+            <div id="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </div>
+        <div id="dvMenu">
+            <uc1:MenuControl ID="MenuControl1" runat="server" />
+        </div>
+        <div class="mainContent">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div id="footer" class="footer"></div>
+    </form>
+</body>
+</html>
