@@ -17,8 +17,11 @@ jobs:
       - name: Setup MSBuild path
         uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Setup NuGet
-        uses: NuGet/setup-nuget@v1.0.5
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x' # Adjust the .NET version if necessary
+
 
       - name: Display repository structure for debugging
         run: |
@@ -26,7 +29,7 @@ jobs:
           dir
 
       - name: Restore NuGet packages
-        run: nuget restore -SolutionDirectory .
+        run: dotnet restore ./ASFDatabase-main/ASFDatabase.csproj # Use the project file here
 
       - name: Publish to folder
         run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\" 
