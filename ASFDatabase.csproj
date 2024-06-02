@@ -5,6 +5,8 @@
     <RootNamespace>ASFDatabase</RootNamespace>
     <AssemblyName>ASFDatabase</AssemblyName>
     <OutputPath>bin\</OutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
   </PropertyGroup>
 
   <ItemGroup>
