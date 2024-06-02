@@ -28,6 +28,9 @@ jobs:
       - name: Restore NuGet packages
         run: nuget restore -PackagesDirectory ./packages
 
+      - name: Build with MSBuild
+      run: msbuild /p:Configuration=Release /p:PackagesDirectory=./packages
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
