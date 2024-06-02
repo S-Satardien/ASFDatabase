@@ -1,4 +1,7 @@
-name: Build and deploy ASP app to Azure Web App - asfdatabase
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy ASP app to Azure Web App - ASFDatabase
 
 on:
   push:
@@ -13,26 +16,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '6.0.x' # Adjust the .NET version if necessary
+      - name: Setup MSBuild path
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
 
       - name: Restore NuGet packages
-      run: nuget restore ./packages.config -PackagesDirectory ./packages
+        run: nuget restore
 
-    - name: Build with MSBuild
-      run: msbuild /p:Configuration=Release /p:PackagesDirectory=./packages
-
-      - name: Copy Web.config
-        run: |
-          cp ASFDatabase-main/Web.config published/Web.config
+      - name: Publish to folder
+        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: ASP-app
-          path: 'published/**'
+          path: '/published/**'
 
   deploy:
     runs-on: windows-latest
@@ -52,11 +52,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_6C97FE0846B945C08B1DD7D2B57C648F }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B44A20EE76304B28BD566583C673B75B }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_ED74A16FF2DC4ED197E503D22DE6815A }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'asfdatabase'
-          package: 'published'
+          app-name: 'ASFDatabase'
+          slot-name: 'Production'
+          package: .
+          
