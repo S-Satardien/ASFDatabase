@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs"
+    Inherits="ASF.Web.SiteMaster" %>
+
+<%@ Register Src="UserControls/MenuControl.ascx" TagName="MenuControl" TagPrefix="uc1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>African Scholars Fund</title>
+    <link rel="StyleSheet" href="/CSS/Main.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/Menu.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/Grid.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/bootstrap.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/jQueryUI/jquery-ui-1.11.0.css" type="text/css" />
+    <link rel="StyleSheet" href="/CSS/jQueryUI/jquery-ui.theme.css" type="text/css" />
+    
+    <script type="text/javascript" src="/Scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-ui-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.dropdownPlain.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.maskedinput-1.3.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.jstepper.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="/Scripts/ASF.js"></script>
+</head>
+<body>
+    <form runat="server">
+    <div id="page">
+        <div id="header-container">
+            <div id="header">
+                <img src="/Images/Header_option2.png" alt="" />
+                <div id="loginDisplay">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <AnonymousTemplate>
+                            [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                            ]
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            Welcome <asp:LoginName ID="HeadLoginName" runat="server" ForeColor="White" font-Bold="True" />! [
+                            <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                                LogoutPageUrl="~/" />
+                            ]
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="dvMenu">
+                    <uc1:MenuControl ID="MenuControl1" runat="server" />
+                </div>
+                <div class="clear"></div>
+                <div class="mainContent">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+    </form>
+</body>
+</html>
