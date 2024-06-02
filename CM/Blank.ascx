@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Blank.ascx.cs" Inherits="ASF.Web.CM.Blank" %>

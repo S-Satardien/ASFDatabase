@@ -1,0 +1,570 @@
+﻿*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    font-family: Verdana;
+    font-size: 9pt;    
+    background: #EEF1F1 url(/Images/HeaderTile.png) repeat-x;
+}
+a
+{
+    color: #343434;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+table 
+{ 
+    empty-cells: show; 
+}
+
+hr
+{
+     text-align: left;
+     background: transparent url(/Images/underline_tile.png) repeat-x;
+     border: none;
+}
+
+h2
+{
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 5px 0px 0px 10px;
+    margin-bottom: 5px;
+    color: #166A8C
+}
+
+.home h2 {
+    font-size: 10pt;
+    margin-bottom: 3px;
+}
+
+.home .block
+{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888;
+    background-color: #FFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.home .block.last {
+    margin-left: 20px;
+}
+
+h5
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #166A8C;
+    margin-bottom: 10px;
+}
+
+img
+{
+    border: none;    
+}
+
+#header-container
+{
+    width: 1300px;
+    margin: 0 auto;    
+}
+#content-container
+{
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+#content
+{
+    margin-top: -20px;
+}
+.clear
+{
+    clear: both;
+}
+#header
+{
+    height: 119px;    
+}
+
+#footer
+{    
+    width: 100%;
+    margin: 0 auto; 
+    background: transparent url('/Images/FooterTile.png') repeat-x; 
+    height: 16px;
+}
+.hidden {
+    display: none;
+}
+.asflabel {
+    color: #797979;    
+}
+#loginDisplay
+{
+    color: #FFFFFF;
+    float: right;
+    position: relative;    
+    top: 40px;
+}
+#loginDisplay a
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#dvMenu
+{
+    position: relative;
+    top :-22px;
+    height: 25px;
+}
+
+.menuHover
+{
+    background: transparent url(/Images/Menu/Nav_background.png) repeat-x;
+}
+
+.mainContent
+{
+    
+}
+
+.login
+{
+    margin: 50px auto;
+    width: 350px;
+    padding: 10px;
+}
+
+.roundCorners
+{
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px;
+}
+
+.button
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    height: 27px;
+    padding-right: 5px;
+    cursor: pointer;
+    background: transparent url(/Images/Button_primary_right.png) no-repeat scroll top right;
+}
+input[type=submit]:hover
+{
+    background-color: #DDDDDD;
+}
+
+.detailsForm
+{
+    padding: 5px 0px 0px 3px;
+}
+
+.detailsForm label, span
+{
+    color: #464646;
+    font-family:Arial;
+    font-size: 12px;
+}
+
+.detailsForm td
+{
+    padding: 2px;
+}
+
+.detailsForm table
+{
+    margin-left: 10px;
+    padding: 0px; 
+    margin: 0px;
+}
+
+input[type=text], input[type=password]
+{
+    color: #797979;
+    font-family: Tahoma; 
+    font-size: 9pt;
+    padding-left: 3px;
+    height: 21px;
+    line-height: 21px;
+    border: #CCCCCC 1px solid;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+}
+
+select
+{
+    color: #797979;
+    font-family: Tahoma; 
+    font-size: 9pt;
+    height: 22px;
+    padding: 2px;
+    width: 165px;
+    border: #CCCCCC 1px solid;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+}
+textarea
+{
+    color: #797979;
+    font-family: Tahoma; 
+    font-size: 9pt;
+    width: 698px;
+    max-width: 698px;
+    height: 41px;
+    padding: 2px;
+    resize:none;
+    border: #CCCCCC 1px solid;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+}
+
+.numericInput
+{
+    color: #797979;
+    font-family: Tahoma; 
+    font-size: 9pt;
+    height: 21px;
+    width: 80px;
+    border: none;
+    padding-right: 5px;
+}
+
+.gridForm
+{
+    margin: 5px;
+}
+
+.grid
+{
+    margin: 0px;
+}
+
+.grid th, .grid td
+{
+    border: solid 1px #CCCCCC;
+}
+
+.toolbar
+{
+    width: 100%;
+    height: 18px;
+    border: solid 1px #99acb5;
+    margin-top: 5px;
+}
+.detailsForm .toolbar
+{
+    width: 98%;
+    height: 18px;
+    border: solid 1px #99acb5;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.gridForm .toolbar
+{
+    margin-bottom: 5px;
+}
+.toolbarCell
+{
+    text-align: left;
+}
+
+.toolbarButton
+{
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+
+.toolbarImageButton
+{
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+    border-right: solid 1px #CCCCCC;
+    background-color: transparent;
+    margin: 1px;
+    text-indent: 20px;
+    font-family: Tahoma;
+    font-size: 8pt;
+    padding: 0 5px 0 3px;
+    color: #464646;
+    height: 22px;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: inherit;
+    border-bottom-width: medium;
+}
+.toolbarImageButton:hover
+{
+    background-color: #D2D2D2;
+}
+.toolbarImageButton.save
+{
+    background: url("/Images/Toolbar/Save.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.list
+{
+    background: url("/Images/Toolbar/GridView.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.add
+{
+    background: url("/Images/Toolbar/Add.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.search
+{
+    background: url("/Images/Toolbar/Search.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.refresh
+{
+    background: url("/Images/Toolbar/Refresh.png") no-repeat;
+    background-position: 3px 0;
+}
+.toolbarImageButton.delete
+{
+    background: url("/Images/Toolbar/Delete.png") no-repeat;
+    background-position: 3px 0;
+}
+.toolbarImageButton.details
+{
+    background: url("/Images/Toolbar/Details.png") no-repeat;
+    background-position: 3px 0;
+}
+.toolbarImageButton.print
+{
+    background: url("/Images/Toolbar/Print.png") no-repeat;
+    background-position: 1px 3px;
+}
+.toolbarImageButton.export
+{
+    background: url("/Images/Toolbar/Export.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.payment
+{
+    background: url("/Images/Toolbar/Payment.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.settings
+{
+    background: url("/Images/Toolbar/Generate.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.scholar
+{
+    background: url("/Images/Toolbar/Scholar.png") no-repeat;
+    background-position: 3px 3px;
+}
+.toolbarImageButton.sponsor
+{
+    background: url("/Images/Toolbar/Sponsor.png") no-repeat;
+    background-position: 3px 0;
+}
+.toolbarImageButton.envelope
+{
+    background: url("/Images/Toolbar/Envelope.png") no-repeat;
+    background-position: 3px 3px;
+}
+.popup
+{
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+
+#dvSearch
+{
+    font-family: Tahoma; 
+    font-size: 9pt;
+    color: #666666;
+}
+
+.ui-dialog-content input, .ui-dialog-content select
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+.ui-dialog-content td
+{
+    padding: 2px;
+}
+
+.checkbox input[type=checkbox]
+{
+    margin: 3px 3px 0px 0px;
+}
+
+.dvHeaderBlock
+{
+    display:block;
+    width:100%;
+    padding: 5px 5px 5px 5px;
+}
+
+.dvHeaderBlock h2
+{
+    display:block;
+    float:left;
+    width:auto;
+}
+
+.dvHeaderBlock span
+{
+    display:block;
+    text-align:right;
+    padding-right:15px;   
+}
+
+.dvHeaderBlock a
+{
+    text-decoration:underline;
+    color:#000000;
+    background-color:#e3eaeb;
+    padding:5px 20px 5px 20px;     
+}
+.standardContainer
+{
+    border: 1px solid #cccccc;
+    padding:5px;
+}
+
+.tblApplicationDetails
+{
+    border: 0px solid #ffffff; 
+    width: 100%; 
+    height: auto;
+}
+
+.tblApplicationDetails td
+{
+    width: 200px;
+}
+
+.tblApplicationDetails a
+{
+    color:#666666;
+    text-decoration:underline;
+}
+
+.requiredField
+{
+    color: #861111;
+    font-size: 10px;
+}
+
+.subjectsGrid th
+{
+    
+}
+
+#container
+{
+    margin: 0 auto;
+    width: 1024px;    
+}
+
+.validationSummaryPoints {
+    padding-left:15px;
+}
+
+.validationSummary {
+    border: 1px solid #861111;
+    padding: 10px;
+    width: 96%;
+    margin-bottom: 10px;
+    line-height:11px;
+    background-color:#f4f7f7;
+    color: #861111;
+    font-size: 10px;
+}
+
+.check
+{
+    horiz-align: center;
+    vertical-align: middle;
+    background: transparent url('/Images/Check.png') no-repeat center;
+}
+.cross
+{
+    horiz-align: center;
+    vert-align: middle;
+    background: transparent url('/Images/Cross.png') no-repeat center;
+}
+
+.ValidationImage
+{
+    height: 14px;
+    width: 14px;
+}
+.total
+{
+    width: 30px;
+    font-weight: bold;
+    border-top: 2px solid grey;    
+    text-align: center;
+ }
+ .center {
+     text-align: center;
+ }
+ .right
+ {
+  text-align: right;   
+ }
+
+.infoLabel
+{
+    color: green;
+    font-family: Arial;
+    font-size: 12px;
+    display: block;
+}
+
+.chkInstCourseLevelSubject input {
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.chkInstCourseLevelSubject label {
+    vertical-align: middle;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.ReportCard {
+    text-align: center;
+}
+
+.ReportCard :hover {
+    cursor: pointer;
+}
+.error {
+    color: red;
+}
