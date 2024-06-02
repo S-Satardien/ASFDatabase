@@ -26,10 +26,10 @@ jobs:
           dir
 
       - name: Restore NuGet packages
-        run: nuget restore ASFDatabase/ASFDatabase.csproj
+        run: nuget restore ASFDatabase/Web.config
 
       - name: Publish to folder
-        run: msbuild ASFDatabase/ASFDatabase.csproj /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="published" 
+        run: msbuild ASFDatabase/Web.config /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="published" 
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
