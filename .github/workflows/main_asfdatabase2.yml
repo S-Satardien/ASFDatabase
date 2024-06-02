@@ -11,28 +11,31 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: List files for debugging
-        run: dir /s /b
-        shell: cmd
+      - name: Setup MSBuild path
+        uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x' # Adjust the .NET version if necessary
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+
+      - name: Display repository structure for debugging
+        run: |
+          echo "Listing repository structure for debugging"
+          dir
 
       - name: Restore NuGet packages
-        run: dotnet restore ASFDatabase-main/ASFDatabase.csproj # Use the project file here
+        run: nuget restore ASFDatabase/ASFDatabase.csproj
 
       - name: Publish to folder
-        run: dotnet publish ASFDatabase-main/ASFDatabase.csproj -c Release -o published # Use the project file here
+        run: msbuild ASFDatabase/ASFDatabase.csproj /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="published" 
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: ASP-app
-          path: 'published/**'
+          path: published/**
 
   deploy:
     runs-on: windows-latest
@@ -63,4 +66,3 @@ jobs:
           app-name: 'asfdatabase'
           slot-name: 'Production'
           package: .
-
