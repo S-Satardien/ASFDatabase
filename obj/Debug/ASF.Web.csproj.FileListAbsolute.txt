@@ -1,0 +1,44 @@
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Web.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Web.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.BusinessObjects.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.DataAccess.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Interfaces.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Providers.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Services.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\TGS.Common.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\TGS.Utilities.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\TGS.Security.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\TGS.Common.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\TGS.Utilities.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.BusinessObjects.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.DataAccess.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Interfaces.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Providers.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\ASF.Services.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\bin\TGS.Security.pdb
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\obj\Debug\ASF.Web.dll
+C:\My Dropbox\Development\Projects\ASF\Source\ASF.Web\obj\Debug\ASF.Web.pdb
+D:\Development\ASF\trunk\ASF.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Web.dll
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Web.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.BusinessObjects.dll
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.DataAccess.dll
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Interfaces.dll
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Providers.dll
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.SearchSpecifications.dll
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Services.dll
+D:\Development\ASF\trunk\ASF.Web\bin\TGS.Common.dll
+D:\Development\ASF\trunk\ASF.Web\bin\TGS.Utilities.dll
+D:\Development\ASF\trunk\ASF.Web\bin\TGS.Security.dll
+D:\Development\ASF\trunk\ASF.Web\bin\TGS.Common.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\TGS.Utilities.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.BusinessObjects.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.DataAccess.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Interfaces.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Providers.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.SearchSpecifications.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\ASF.Services.pdb
+D:\Development\ASF\trunk\ASF.Web\bin\TGS.Security.pdb
+D:\Development\ASF\trunk\ASF.Web\obj\Debug\ASF.Web.dll
+D:\Development\ASF\trunk\ASF.Web\obj\Debug\ASF.Web.pdb
